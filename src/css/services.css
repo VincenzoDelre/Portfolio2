@@ -1,0 +1,21 @@
+/* .swiper-cube-shadow:before{
+    background: white !important;
+} */
+@media (max-width:767px){
+    .swiper{
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    .swiper{
+    
+        width: 40%;
+        margin: auto;
+    }
+    
+}
+
+.gbi--1462358676-hsXAgveiB2mdX5tvdHuLCw::before{
+    width: 100%;
+}
