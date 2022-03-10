@@ -32,7 +32,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     proyectos.forEach(proyecto => {
         actions.createPage({
             path: proyecto.slug,
-            component: require.resolve('./src/components/proyectos.js'),
+            component: require.resolve('./src/components/ProyectoTemplate.js'),
             context: {
                 slug:proyecto.slug
             }
@@ -43,7 +43,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     logos.forEach(logo => {
       actions.createPage({
           path: logo.slug,
-          component: require.resolve('./src/components/logos.js'),
+          component: require.resolve('./src/components/LogosTemplate.js'),
           context: {
               slug:logo.slug
           }
