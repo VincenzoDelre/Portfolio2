@@ -5,15 +5,17 @@ import styled from "@emotion/styled"
 import useProyecto from '../hooks/useProyecto'
 import useHerramientas from '../hooks/useHerramientas'
 import useLogo from '../hooks/useLogo'
+
 import { Layout } from '../components/Layout'
 import Maqueta from '../components/Maqueta'
 import ContenidoInicio from '../components/Inicio'
 import { Services } from '../components/Services'
+
 import ProyectoPreview from '../components/ProyectoPreview'
 import LogoPreview from '../components/LogoPreview'
+import HerramientaPreview from '../components/HerramientaPreview'
 
 import "../css/services.css"
-import HerramientaPreview from '../components/HerramientaPreview'
 import Contacto from '../components/Contacto'
 
 
