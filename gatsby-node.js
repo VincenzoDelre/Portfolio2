@@ -16,14 +16,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
     `)
 
-}  
 
-    // console.log(resultado.data.allDatoCmsProyecto.nodes)
-    if(resultado.errors)
+
+    console.log(resultado.data.allDatoCmsProyecto.nodes)
+    // if(resultado.errors)
     
-    {
-        reporter.panic('No hubo resultado', resultado.errors);
-    }
+    // {
+    //     reporter.panic('No hubo resultado', resultado.errors);
+    // }
 
     //Si hay paginas crear los archivos
     const proyectos = resultado.data.allDatoCmsProyecto.nodes;
@@ -50,3 +50,4 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
       })
   });
+}
