@@ -16,7 +16,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
     `)
 
-    
+}  
 
     // console.log(resultado.data.allDatoCmsProyecto.nodes)
     if(resultado.errors)
@@ -50,4 +50,3 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
       })
   });
-}
