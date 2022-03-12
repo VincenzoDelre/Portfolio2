@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { getImage } from "gatsby-plugin-image"
+import { css } from '@emotion/react'
 
 import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from 'gatsby-background-image'
@@ -31,7 +32,9 @@ const BackgroundSection = ({children }) => {
   const bgImage = convertToBgImage(image)
 
   return (
-    
+    <section css={css`
+      width: 100%;
+      `}>
       <BackgroundImage
         Tag="section"
         
@@ -42,6 +45,7 @@ const BackgroundSection = ({children }) => {
         {children}
         
       </BackgroundImage>  
+    </section>
   )
 }
 

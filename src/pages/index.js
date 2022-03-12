@@ -51,7 +51,7 @@ const ListadoHerramientas = styled.ul`
   margin: auto;
   display: grid;
   grid-template-columns:repeat(3,1fr);
-  grid-template-rows: 1fr;
+  margin: 8rem;
   gap: 0.5rem;
   align-items: flex-start;
 
@@ -59,7 +59,7 @@ const ListadoHerramientas = styled.ul`
     max-width: 1200px;
     display: grid;
     grid-template-columns:repeat(4,1fr);
-    grid-template-rows: 1fr;
+    
     gap: 3rem;
     align-items: flex-start;
   }
@@ -158,13 +158,7 @@ export const Index = () => {
 
       <Maqueta>
 
-      <ListadoHerramientas css={css`
-          width: 80vw;
-          @media(min-width:767px){
-
-            margin: 8rem;
-          }
-         `}>
+      <ListadoHerramientas>
          
            { herramientas.map( herramienta =>(
              <HerramientaPreview

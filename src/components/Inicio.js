@@ -62,7 +62,7 @@ const ContenidoInicio = () => {
     return ( 
         <div css={css`
             
-            width: 100%;
+            width: 90%;
             text-align: center;
 
             @media(min-width:768px){

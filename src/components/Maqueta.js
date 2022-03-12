@@ -7,12 +7,13 @@ import BackgroundHero from './Background';
 const DiagonalBox = styled.div`
 
   position: relative;
-  transform: skewY(-5deg);
+  transform: skewY(-6deg);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   @media(min-width:768px){
+    
     
   }
 
@@ -24,6 +25,8 @@ const DiagonalBox = styled.div`
     bottom: 0;
     width: 100%;
   }
+
+
 `;
 
 const Content = styled.div`
@@ -47,8 +50,7 @@ const Content = styled.div`
 export const Maqueta = ({children}) => {
   return (
    
-    <DiagonalBox>
-      
+    <DiagonalBox>     
       <BackgroundHero >
         <Content>
           {children}
