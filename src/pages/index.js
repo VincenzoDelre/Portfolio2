@@ -17,6 +17,7 @@ import HerramientaPreview from '../components/HerramientaPreview'
 
 import "../css/services.css"
 import Contacto from '../components/Contacto'
+import Hero from '../components/Hero'
 
 
 const ListadoProyectos = styled.ul`
@@ -75,6 +76,9 @@ export const Index = () => {
   const logos = useLogo();
   const herramientas = useHerramientas();
   return (
+    <>
+
+      <Hero />
     
       <Layout>
 
@@ -179,6 +183,7 @@ export const Index = () => {
       
 
       </Layout>
+    </>
     
   )
 }

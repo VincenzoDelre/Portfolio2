@@ -27,7 +27,7 @@ module.exports = {
       path: `${__dirname}/src/images`,
     },
   }, "gatsby-plugin-react-helmet",
-  
+  "gatsby-plugin-smoothscroll",  
   "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
