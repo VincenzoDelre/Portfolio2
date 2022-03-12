@@ -9,7 +9,7 @@ import BackgroundImage from 'gatsby-background-image';
 
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { css } from "@emotion/react";
-import Header from "./header";
+// import Header from "./header";
 // import {AwesomeButton} from 'react-awesome-button';
 // import 'react-awesome-button/dist/styles.css'
 
