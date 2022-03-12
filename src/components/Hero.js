@@ -255,7 +255,7 @@ const Hero = () =>  {
             <UniqueWeb>
             <h4>Unique webs</h4>
             </UniqueWeb>
-            <Header />
+            
             <Titulo>
             
 
