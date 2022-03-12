@@ -1,7 +1,7 @@
-import React, { Children } from 'react'
+import React from 'react'
 import styled from "@emotion/styled"
 import BackgroundHero from './Background';
-import { css } from "@emotion/react"
+// import { css } from "@emotion/react"
 
 
 const DiagonalBox = styled.div`
@@ -22,6 +22,7 @@ const DiagonalBox = styled.div`
     right: 0;
     left: 0;
     bottom: 0;
+    width: 100%;
   }
 `;
 
@@ -46,13 +47,14 @@ const Content = styled.div`
 export const Maqueta = ({children}) => {
   return (
    
-    <BackgroundHero>
-      <DiagonalBox>
+    <DiagonalBox>
+      
+      <BackgroundHero >
         <Content>
           {children}
         </Content>
+        </BackgroundHero>
       </DiagonalBox>
-    </BackgroundHero>
    
   )
 }

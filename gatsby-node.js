@@ -19,15 +19,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
 
     console.log(resultado.data.allDatoCmsProyecto.nodes)
-    // if(resultado.errors)
+    if(resultado.errors)
     
-    // {
-    //     reporter.panic('No hubo resultado', resultado.errors);
-    // }
+    {
+        reporter.panic('No hubo resultado', resultado.errors);
+    }
 
     //Si hay paginas crear los archivos
     const proyectos = resultado.data.allDatoCmsProyecto.nodes;
     const logos = resultado.data.allDatoCmsLogo.nodes;
+    
 
     proyectos.forEach(proyecto => {
         actions.createPage({
@@ -38,6 +39,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             }
 
         })
+        console.log(proyectos)
     });
 
     logos.forEach(logo => {
