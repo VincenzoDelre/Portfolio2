@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react'
-import Navegacion from './nav';
+import Navegacion from './Navegacion';
 
 const DivHeader = styled.div`
         position:fixed;
