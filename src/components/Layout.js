@@ -3,7 +3,7 @@ import React from 'react'
 import { Global, css } from '@emotion/react'
 import { Helmet } from 'react-helmet'
 import useSeo from '../hooks/useSeo';
-import Footer from './footer';
+import Footer from './Footer';
 
 export const Layout = (props) => {
 
