@@ -78,7 +78,7 @@ export const Index = () => {
   return (
     <>
 
-      <Hero />
+      {/* <Hero /> */}
     
       <Layout>
 
