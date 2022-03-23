@@ -56,9 +56,9 @@ export const Services= () => {
         }}
         
         css={css`
-                --swiper-pagination-color:white;
-                --swiper-navigation-color:white;
-                --swiper-pagination-bullet-inactive-color:red;
+                --swiper-pagination-color:#fff;
+                --swiper-navigation-color:#fff;
+                --swiper-pagination-bullet-inactive-color:#333;
                 --swiper-pagination-bullet-inactive-opacity: 0.6;
                 
                 
@@ -96,10 +96,10 @@ export const Services= () => {
       <Dado2/>
     </SwiperSlide>
     <SwiperSlide>  
-      <StaticImage src='../images/dado1.png' alt='dado1'/>
+      <StaticImage src='../images/logo1.webp' alt='dado1'/>
     </SwiperSlide>
     <SwiperSlide>
-      <StaticImage src='../images/dado1.png' alt='dado1'/>
+      <StaticImage src='../images/seo1.webp' alt='dado1'/>
     </SwiperSlide>
     
   </Swiper>

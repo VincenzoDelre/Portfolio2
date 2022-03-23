@@ -18,7 +18,7 @@ export const Dado2 = () => {
 
       
       
-      <StaticImage src="../../images/icon.png" alt="testimage"/>
+      <StaticImage src="../../images/web1.webp" alt="testimage"/>
   
   
     </div>

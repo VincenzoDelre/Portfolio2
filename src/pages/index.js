@@ -110,7 +110,11 @@ export const Index = () => {
       </H2>
 
       <Maqueta>
-        <ListadoProyectos >
+        <ListadoProyectos css={css`
+          @media (max-width:768px){
+            margin-top:3rem;
+          }
+        `}>
 
         { proyectos.map( proyecto =>(
           <ProyectoPreview
