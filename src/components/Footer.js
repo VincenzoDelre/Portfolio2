@@ -1,10 +1,10 @@
 import React from 'react';
 import { css } from '@emotion/react'
-import Navegacion from './Nav'
 
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { StaticImage } from 'gatsby-plugin-image';
 
+import Navegacion from './Nav'
 
 
 
