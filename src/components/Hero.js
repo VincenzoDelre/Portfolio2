@@ -8,7 +8,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { css } from "@emotion/react";
 
-import Header from "./header";
+import Header from "./Header";
 import {AwesomeButton} from 'react-awesome-button';
 import 'react-awesome-button/dist/styles.css'
 
