@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 import React from 'react';
-// import { css } from '@emotion/react';
+
 
 const Nav = styled.nav`
     display: flex;
@@ -24,7 +24,7 @@ const Icono = styled.i`
 const Navegacion = () => {
     return ( 
         <Nav>
-            <a 
+            <Link 
                 className="navbar__link" 
                 href="https://www.instagram.com/mi_cro_mon_di">
                     <Icono
@@ -32,8 +32,8 @@ const Navegacion = () => {
                         >
                     </Icono>
                     
-            </a>
-            <a 
+            </Link>
+            <Link 
                 className="navbar__link" 
                 href="#">
                     <Icono 
@@ -41,8 +41,8 @@ const Navegacion = () => {
                         >
                     </Icono>
                     
-            </a>
-            <a 
+            </Link>
+            <Link 
                 className="navbar__link" 
                 href="#">
                     <Icono
@@ -50,7 +50,7 @@ const Navegacion = () => {
                         >
                     </Icono>
                     
-            </a>
+            </Link>
             
         </Nav>
      );

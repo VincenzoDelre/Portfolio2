@@ -3,8 +3,6 @@ import Background from "../images/water1.png";
 
 import styled from '@emotion/styled';
 
-import { graphql, useStaticQuery } from 'gatsby';
-import BackgroundImage from 'gatsby-background-image';
 import { StaticImage } from "gatsby-plugin-image"
 
 import scrollTo from 'gatsby-plugin-smoothscroll';
@@ -37,10 +35,10 @@ const TextoImagen = styled.div`
     bottom: 7%;
     border-radius: 2rem;
     color: transparent;
-    /* border: 1px solid #000; */
+    /* border: 1px solid #f00; */
     padding: 2rem 2rem;
     background: transparent;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     z-index: 2;
     
     width: 95%;
@@ -105,9 +103,9 @@ const LinkBoton = styled.button`
 
 
 &:hover {
-  filter: blur(0);
+  /* filter: blur(0); */
   color: #fff;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 `;
@@ -117,7 +115,7 @@ const Boton = styled.nav`
     margin: 0.1rem;
     padding: 0.2rem;
     border-radius: 10px;
-    text-decoration: none;
+    /* text-decoration: none; */
 
 `;
 
@@ -191,29 +189,6 @@ const Logo = styled.div`
 
 const Hero = () =>  {
 
-    
-  const data = useStaticQuery(
-      graphql`
-      query MyQuery102 {
-          file(relativePath: {eq: "logo.png"}) { 
-              childImageSharp {
-                  fluid(quality: 100, maxWidth: 1920) {
-                      srcSetWebp 
-                  }
-              }
-          }
-
-        }
-      `
-    )
-      
-  const imageData = data.file.childImageSharp.fluid;
-
-
-
-
-
-  
     return (
       <>
       <div
@@ -312,19 +287,19 @@ const Hero = () =>  {
             <TextoImagen>
             <LateralDiv>
               <Boton>
-                            <LinkBoton onClick={() => scrollTo('#servicios', 'center')}>
-                                Services
-                            </LinkBoton>
-                        </Boton>
-                        <Boton>
-                            <LinkBoton onClick={() => scrollTo('#proyectos', 'center')}>
-                                Works
-                            </LinkBoton>
-                        </Boton>
-                        <Boton>
-                            <LinkBoton onClick={() => scrollTo('#tools', 'center')}>
-                                Tools
-                            </LinkBoton>
+                  <LinkBoton onClick={() => scrollTo('#servicios', 'center')}>
+                      Services
+                  </LinkBoton>
+              </Boton>
+              <Boton>
+                  <LinkBoton onClick={() => scrollTo('#proyectos', 'center')}>
+                      Works
+                  </LinkBoton>
+              </Boton>
+              <Boton>
+                  <LinkBoton onClick={() => scrollTo('#tools', 'center')}>
+                      Tools
+                  </LinkBoton>
               </Boton>
 
 

@@ -72,17 +72,22 @@ const ContenidoInicio = () => {
             `}>
             
             <TextoInicio>
-            <div css={css`
-                    
-                    
+                <div css={css`
+                    display:flex;                    
+                    justify-content: center;
+                    align-items: center;
                     overflow: hidden;
+                    
+                    width: 70%;
+                    margin: auto;
+                    filter: grayscale(0.7);
                 `}>
                     <GatsbyImage 
                         image={image} 
                         alt='alt per favor'
                         css={css`
-                            filter:opacity(0.2);
-                            border-radius: 50%;
+                            /* filter:opacity(0.2); */
+                            border-radius: 90%;
                         `}/>
                 </div>
 

@@ -3,6 +3,7 @@ import React from 'react'
 import { Global, css } from '@emotion/react'
 import { Helmet } from 'react-helmet'
 import useSeo from '../hooks/useSeo';
+import Footer from './footer';
 
 export const Layout = (props) => {
 
@@ -83,6 +84,12 @@ export const Layout = (props) => {
         </Helmet>
 
         {props.children}
+
+        <Footer 
+            title={title}
+            
+            
+        />
     </>
   )
 }
