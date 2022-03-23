@@ -1,18 +1,19 @@
 import React from "react";
 import Background from "../images/water1.png";
-import WaterWave from "react-water-wave";
+
 import styled from '@emotion/styled';
 
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-
+import { StaticImage } from "gatsby-plugin-image"
 
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { css } from "@emotion/react";
 
-// import Header from "./header";
-// import {AwesomeButton} from 'react-awesome-button';
-// import 'react-awesome-button/dist/styles.css'
+import Header from "./header";
+import {AwesomeButton} from 'react-awesome-button';
+import 'react-awesome-button/dist/styles.css'
+
 
 
 const Content = styled.div`
@@ -76,10 +77,10 @@ const LateralDiv = styled.div`
     justify-content: left;
     align-items: center;
     padding:3rem;
-    margin-bottom: 10vh;
+    
     font-family: 'Montserrat', sans-serif;
     @media (min-width: 768px){
-        margin-bottom: 20vh;
+        
         flex-direction: row;
     }  
     
@@ -151,19 +152,16 @@ const UniqueWeb = styled.div`
     }
 
 `
-const Logo = styled(BackgroundImage)`
+const Logo = styled.div`
     display: flex;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+    justify-content: center;
+    align-items: center;
     z-index:99;
     height: 15vh;
     width: 80%;
-    background-size: contain;
+    
     @media(min-width:768px){
-    height: 15vh;
+    height: 25vh;
     width: 60vh;
     }
     `;
@@ -184,9 +182,9 @@ const Logo = styled(BackgroundImage)`
     top:0;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin-bottom: 20vh;
+    /* margin-bottom: 20vh; */
       @media (min-width: 768px){
-          margin-bottom: 20vh;}  
+          /* margin-bottom: 20vh;}   */}
       `
     
 
@@ -215,10 +213,10 @@ const Hero = () =>  {
 
 
 
-  const renderFirstold = () => {
+  
     return (
       <>
-      <WaterWave
+      <div
         
         css={css`
         width: 100%;
@@ -244,15 +242,13 @@ const Hero = () =>  {
         );
         }
         `}
-        dropRadius={20}
-        perturbance={0.01}
-        interactive={true}
+        
       >
 
-        {methods => (
+        
           <>
             <Content id='hero'>
-            {/* <Header /> */}
+            <Header />
 
             <UniqueWeb>
             <h4>Unique webs</h4>
@@ -261,20 +257,18 @@ const Hero = () =>  {
             <Titulo>
             
 
-            <Logo
-            tag='section'  
-            alt='hero' 
-            fluid={imageData} 
-            fadeIn="soft"
-
-            >
-
+            <Logo>
+              <StaticImage 
+                src="../images/logo.webp" 
+                alt="logo"
+                />
             </Logo>
+            
             <p>Front-end Developer</p> 
 
 
             
-            {/* <AwesomeButton 
+            <AwesomeButton 
             
               type="primary"
               size="large"
@@ -289,28 +283,28 @@ const Hero = () =>  {
               --button-primary-color-hover:'black';
               
 
-              `} */}
+              `} 
               
                 
             
               
-              {/* > */}
-                        <LinkBoton 
-                          css={css`
-                            color:#666;
-                            font-size: 1.5rem;
-                            font-weight: 900;
-                            @media(min-width:768px){
-                                font-size:1.5rem;
-                            }
-                            &.hover{
-                              color:#fff;
-                            }
-                          `}
-                          onClick={() => scrollTo('#contacto', 'center')}>
-                            CONTACT ME
-                        </LinkBoton>
-            {/* </AwesomeButton> */}
+              > 
+                <LinkBoton 
+                  css={css`
+                    color:#666;
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                    @media(min-width:768px){
+                        font-size:1.5rem;
+                    }
+                    &.hover{
+                      color:#fff;
+                    }
+                  `}
+                  onClick={() => scrollTo('#contacto', 'center')}>
+                    CONTACT ME
+                </LinkBoton>
+            </AwesomeButton>
             
             </Titulo>
 
@@ -338,8 +332,8 @@ const Hero = () =>  {
             </TextoImagen>
             </Content>
           </>
-        )}
-        </WaterWave>
+        
+        </div>
       </>
         
             // <>
@@ -413,7 +407,6 @@ const Hero = () =>  {
       
     );
   };
-  return <div className="Hero">{renderFirstold()}</div>;
-};
+  
  
 export default Hero;

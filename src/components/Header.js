@@ -33,7 +33,8 @@ const Header = () => {
                 bottom: 0;
                 left: 0;
                 background-color: transparent;
-                margin-bottom: 20vh;`}
+                
+                `}
                 > 
 
                 <div

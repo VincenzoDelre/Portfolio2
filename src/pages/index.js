@@ -78,14 +78,14 @@ export const Index = () => {
   return (
     <>
 
-      {/* <Hero /> */}
+      <Hero />
     
       <Layout>
 
       <H2 
         css={css`
           @media(min-width:768px){
-          margin-top:-3vh;}
+          margin-top:5vh;}
           `}>
             Hi! I'm Vin
       </H2>
