@@ -26,7 +26,7 @@ const Navegacion = () => {
         <Nav>
             <Link 
                 className="navbar__link" 
-                href="https://www.instagram.com/mi_cro_mon_di">
+                href="https://www.instagram.com/pizze_da_vincenzo/">
                     <Icono
                         className="fab fa-instagram fa-lg"
                         >
@@ -35,7 +35,7 @@ const Navegacion = () => {
             </Link>
             <Link 
                 className="navbar__link" 
-                href="#">
+                href="https://twitter.com/delrevincenzo30">
                     <Icono 
                         className="fab fa-twitter fa-lg"
                         >
@@ -44,7 +44,7 @@ const Navegacion = () => {
             </Link>
             <Link 
                 className="navbar__link" 
-                href="#">
+                href="https://www.linkedin.com/in/vincenzo-delre-107a33112/">
                     <Icono
                         className="icono fab fa-linkedin-in fa-lg"
                         >
