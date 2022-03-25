@@ -139,12 +139,13 @@ export const Contacto = () => {
                       text-align: left;
                   }
                 `}>
-                  <p>Get in touch! I'll be happy to reply, have a nice day </p>
+                  <p>Get in touch! I'll be happy to reply. Have a nice day </p>
                 </div>
                 <Campo>
 
                   <CampoLabel>Name</CampoLabel>
                   <CampoField 
+                    required
                     type="text" 
 
                     onChange={handleName}
@@ -157,6 +158,7 @@ export const Contacto = () => {
                 <Campo>
                     <CampoLabel>Email</CampoLabel>
                     <CampoField 
+                    required
 
                     type="email" 
                     onChange={handleEmail}
@@ -168,7 +170,7 @@ export const Contacto = () => {
                 <Campo>
                     <CampoLabel>Message</CampoLabel>
                   <CampoTextarea
-
+                    required
                     rows="7"
                     type="text" 
                     onChange={handleMessage}
@@ -183,18 +185,23 @@ export const Contacto = () => {
                   type="submit"
                   value="Send"
                   css={css`
-                    background-color:#ccc;
+                    background-color:#eee;
                     color:#000;
                     border-radius:1rem;
                     border:1px solid #aaa;
                     padding-top: 0.5rem;
-                    font-size: 2rem;
+                    font-size: 1.2rem;
                     padding: 0.5rem 2rem;
                     &:hover{
                       background-color: #bbb;
                       color:#fff;
                       
-                    }`}>Send </button>
+                    }
+                    @media(min-width:768px){
+                      font-size: 2rem;
+                    }
+                    
+                    `}>Send </button>
               </div>
 
           </form>

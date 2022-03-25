@@ -11,7 +11,7 @@ export const HerramientaPreview = ( {herramienta} ) => {
     return (
         
         <MouseParallaxContainer>
-        <MouseParallaxChild factorX={0.05} factorY={0.05} >
+        <MouseParallaxChild factorX={0.2} factorY={0.05} >
         <div css={css`
             display: flex;
             justify-content: center;
