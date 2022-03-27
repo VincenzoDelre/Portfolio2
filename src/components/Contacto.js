@@ -113,7 +113,9 @@ export const Contacto = () => {
       
       
       
-      <div css={css`
+      <div 
+      id='contacto'
+      css={css`
         display:flex;
         justify-content: center;
         align-items: center;

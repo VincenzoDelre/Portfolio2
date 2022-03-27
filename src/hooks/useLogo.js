@@ -6,9 +6,10 @@ const useLogo = () => {
         allDatoCmsLogo {
           nodes {
             contenido
-            titulo
-            slug
             id
+            titulo
+            link
+            slug
             imagen {
               gatsbyImageData(width: 100, height: 100)
             }
@@ -23,7 +24,8 @@ const useLogo = () => {
         id: logo.id,
         contenido: logo.contenido,
         slug: logo.slug,
-        imagen: logo.imagen
+        imagen: logo.imagen,
+        link: logo.link
     }))
     
 }

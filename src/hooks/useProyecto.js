@@ -8,6 +8,7 @@ const useProyecto = () => {
             contenido
             id
             titulo
+            link
             slug
             imagen {
                 gatsbyImageData(width: 1800, height: 800)
@@ -23,7 +24,8 @@ const useProyecto = () => {
         id: proyecto.id,
         contenido: proyecto.contenido,
         slug: proyecto.slug,
-        imagen: proyecto.imagen
+        imagen: proyecto.imagen,
+        link: proyecto.link
     }))
    
 }

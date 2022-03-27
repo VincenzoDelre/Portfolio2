@@ -5,6 +5,7 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';  
 import { Layout } from '../components/Layout';
 
+
 export const query = graphql`
 
 query ($slug: String!) {
@@ -12,6 +13,7 @@ query ($slug: String!) {
       nodes {
         titulo
         contenido
+        link
         imagen {
           gatsbyImageData(height: 450)  
         }
@@ -29,15 +31,38 @@ const Contenido = styled.div`
       
     `;
 
+const H2 = styled.h2`
+  font-size: 1.5rem;
+  margin: 1.5rem auto;  
+  text-align: center;
+  color: #000000;
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+    margin: 2.5rem auto;    
+  }  
+`
+
+
 const ProyectoTemplate = ({data: { allDatoCmsProyecto: {nodes}}}) => {
     
-    const { titulo, contenido, imagen } = nodes[0];
+    const { titulo, contenido, imagen, link } = nodes[0];
     const image = getImage(imagen);
+    
     
     return ( 
 
-      <Contenido>
+      <div
+      css={css`
+          display: flex;
+          min-height: 100vh;
+          flex-direction: column;
+          justify-content: space-between;
+
+          `}>
+
       <Layout>
+          
+      <Contenido>
 
         
         <main  
@@ -57,6 +82,10 @@ const ProyectoTemplate = ({data: { allDatoCmsProyecto: {nodes}}}) => {
                 }
 
             `}>{titulo}</h1>
+            
+            
+            <H2>{link}</H2>
+            
             <div css={css`
                 display: flex;
                 justify-content: center;
@@ -85,8 +114,9 @@ const ProyectoTemplate = ({data: { allDatoCmsProyecto: {nodes}}}) => {
                 >{contenido}</p>
             </div>
         </main>
-      </Layout>
       </Contenido>
+      </Layout>
+      </div>
 
      );
 }

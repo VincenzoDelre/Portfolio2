@@ -95,22 +95,20 @@ export const Index = () => {
       </Maqueta>
 
       {/* SERVICIOS */}
-      <H2 
-            id='servicios'  
-          >
+      <H2>
             Services
       </H2> 
       <Services/>
       
       {/* PROYECTOS */}       
-      <H2
-        id='proyectos'
-        >
+      <H2>
         Proyects
       </H2>
 
       <Maqueta>
-        <ListadoProyectos css={css`
+        <ListadoProyectos 
+        id='proyectos'
+        css={css`
           @media (max-width:768px){
             margin-top:3rem;
           }
@@ -128,13 +126,14 @@ export const Index = () => {
       </Maqueta>
 
       {/* LOGOS */}
-      <H2
-          id='logos'
-          >
+      <H2>
             Logos
       </H2>
       <Maqueta>
-      <ListadoProyectos css={css`
+      <ListadoProyectos 
+      
+      id='logos'
+      css={css`
         width: 95%;
         display: flex;
         align-items: center;
@@ -158,15 +157,16 @@ export const Index = () => {
       </Maqueta>
       
 
-      <H2 
-        id='tools'
-        >  
+      <H2>  
           Tools
       </H2>  
 
       <Maqueta>
 
-      <ListadoHerramientas>
+      <ListadoHerramientas
+       
+      id='tools'
+      >
          
            { herramientas.map( herramienta =>(
              <HerramientaPreview
@@ -178,7 +178,7 @@ export const Index = () => {
       </Maqueta>
       
       {/* CONTACTO */}
-      <H2 id='contacto'>Contact</H2>
+      <H2>Contact</H2>
 
       <Maqueta>
         <Contacto/>

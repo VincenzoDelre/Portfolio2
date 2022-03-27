@@ -13,6 +13,7 @@ query ($slug: String!) {
       nodes {
         titulo
         contenido
+        link
         imagen {
           gatsbyImageData(height: 450)
         }
@@ -28,16 +29,34 @@ const Contenido = styled.div`
       flex-direction: column;
       justify-content: space-between;
       vertical-align: center;
-      
     `;
 
+const H2 = styled.h2`
+font-size: 1.5rem;
+margin: 1.5rem auto;  
+text-align: center;
+color: #000000;
+@media (min-width: 768px) {
+  font-size: 2.5rem;
+  margin: 2.5rem auto;    
+}  
+`
 const LogoTemplate = ({data: { allDatoCmsLogo: {nodes}}}) => {
     
-    const { titulo, contenido, imagen } = nodes[0];
+    const { titulo, contenido, imagen, link } = nodes[0];
     const image = getImage(imagen);
     return ( 
+
+      <div
+      css={css`
+          display: flex;
+          min-height: 100vh;
+          flex-direction: column;
+          justify-content: space-between;
+
+          `}>
+      <Layout>
       <Contenido>
-        <Layout>
             <main
                 css={css`
                     margin: 0 auto;
@@ -55,6 +74,9 @@ const LogoTemplate = ({data: { allDatoCmsLogo: {nodes}}}) => {
                       }
                         
                 `}>{titulo}</h1>
+
+
+              <H2>{link}</H2>  
               <div css={css`
                 display: flex;
                 justify-content: center;
@@ -85,9 +107,9 @@ const LogoTemplate = ({data: { allDatoCmsLogo: {nodes}}}) => {
                 `}>{contenido}</p>
               </div>
             </main>
-        </Layout>
       </Contenido>
-
+      </Layout>
+      </div>
      );
 }
  

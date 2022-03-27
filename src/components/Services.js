@@ -54,7 +54,7 @@ export const Services= () => {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         }}
-        
+        id='servicios'
         css={css`
                 --swiper-pagination-color:#fff;
                 --swiper-navigation-color:#fff;
@@ -83,7 +83,7 @@ export const Services= () => {
                 
             `}>
       
-    <SwiperSlide
+    {/* <SwiperSlide
       css={css`
         display:flex;
         justify-content: center;
@@ -91,7 +91,7 @@ export const Services= () => {
         `}>
       <StaticImage src='../images/dado1.png' alt='dado1'
         />
-    </SwiperSlide> 
+    </SwiperSlide>  */}
     <SwiperSlide>
       <Dado2/>
     </SwiperSlide>
