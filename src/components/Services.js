@@ -54,7 +54,7 @@ export const Services= () => {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         }}
-        id='servicios'
+        
         css={css`
                 --swiper-pagination-color:#fff;
                 --swiper-navigation-color:#fff;

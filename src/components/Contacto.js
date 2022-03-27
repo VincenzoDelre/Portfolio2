@@ -114,7 +114,7 @@ export const Contacto = () => {
       
       
       <div 
-      id='contacto'
+      
       css={css`
         display:flex;
         justify-content: center;

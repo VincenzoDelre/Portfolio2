@@ -304,7 +304,7 @@ const Hero = () =>  {
                       color:#fff;
                     }
                   `}
-                  onClick={() => scrollTo('#contacto', 'center')}>
+                  onClick={() => scrollTo('#contacto', 'start')}>
                     CONTACT ME
                 </LinkBoton>
             </AwesomeButton>
@@ -315,17 +315,17 @@ const Hero = () =>  {
             <TextoImagen>
             <LateralDiv>
               <Boton>
-                  <LinkBoton onClick={() => scrollTo('#servicios', 'center')}>
+                  <LinkBoton onClick={() => scrollTo('#servicios', 'start')}>
                       Services
                   </LinkBoton>
               </Boton>
               <Boton>
-                  <LinkBoton onClick={() => scrollTo('#proyectos', 'center')}>
+                  <LinkBoton onClick={() => scrollTo('#proyectos', 'start')}>
                       Works
                   </LinkBoton>
               </Boton>
               <Boton>
-                  <LinkBoton onClick={() => scrollTo('#tools', 'center')}>
+                  <LinkBoton onClick={() => scrollTo('#tools', 'start')}>
                       Tools
                   </LinkBoton>
               </Boton>
