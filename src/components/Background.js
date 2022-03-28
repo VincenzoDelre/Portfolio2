@@ -14,7 +14,7 @@ const BackgroundSection = ({children }) => {
   const { placeholderImage } = useStaticQuery(
     graphql`
     query MyQuery {
-        placeholderImage:file(relativePath: {eq: "water1.png"}) {
+        placeholderImage:file(relativePath: {eq: "water4.jpg"}) {
           childImageSharp {
             gatsbyImageData(
               
@@ -40,6 +40,7 @@ const BackgroundSection = ({children }) => {
         
         {...bgImage}
         preserveStackingContext
+        
       >
         
         {children}
@@ -56,6 +57,7 @@ const BackgroundHero = styled(BackgroundSection)`
   background-size: cover;
   display: flex;
   height: auto;
+  
   
 `
   

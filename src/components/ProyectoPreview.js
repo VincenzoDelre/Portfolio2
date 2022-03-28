@@ -72,7 +72,7 @@ const ProyectoPreview = ({proyecto}) => {
                     width: 220%;
                     height: 220%;
                     
-                    filter: grayscale(80%);
+                    filter: grayscale(100%);
                     &:hover{
                         filter:grayscale(0%);
                     

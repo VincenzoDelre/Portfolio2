@@ -72,7 +72,7 @@ const LogoPreview = ({logo}) => {
                 padding:1rem;
                 width: 100%;
                 height: 100%;
-                filter: grayscale(80%);
+                filter: grayscale(100%);
                     &:hover{
                         filter:grayscale(0%);
                     

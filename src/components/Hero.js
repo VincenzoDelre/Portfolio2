@@ -1,5 +1,5 @@
 import React from "react";
-import Background from "../images/water1.png";
+import Background from "../images/water4.jpg";
 
 import styled from '@emotion/styled';
 
@@ -235,6 +235,7 @@ const Hero = () =>  {
                 src="../images/logo.webp" 
                 alt="logo"
                 css={css`
+                  
                   -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
 	                        animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
 
