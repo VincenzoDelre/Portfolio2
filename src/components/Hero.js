@@ -1,5 +1,5 @@
 import React from "react";
-import Background from "../images/water4.jpg";
+import Background from "../images/water4.webp";
 
 import styled from '@emotion/styled';
 

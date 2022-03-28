@@ -14,7 +14,7 @@ const BackgroundSection = ({children }) => {
   const { placeholderImage } = useStaticQuery(
     graphql`
     query MyQuery {
-        placeholderImage:file(relativePath: {eq: "water4.jpg"}) {
+        placeholderImage:file(relativePath: {eq: "water4.webp"}) {
           childImageSharp {
             gatsbyImageData(
               
