@@ -37,7 +37,7 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-parallax-mouse": "^1.5.1",
-    "react-water-wave": "^1.0.5",
+    "react-water-wave": "^2.0.1",
     "swiper": "^8.0.7"
   }
 }

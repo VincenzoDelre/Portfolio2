@@ -11,7 +11,7 @@ import { css } from "@emotion/react";
 import Header from "./Header";
 import {AwesomeButton} from 'react-awesome-button';
 import 'react-awesome-button/dist/styles.css'
-
+import WaterWave from 'react-water-wave'
 
 
 const Content = styled.div`
@@ -188,10 +188,10 @@ const Logo = styled.div`
 
 
 const Hero = () =>  {
-
+  const renderFirstold = () => {
     return (
       <>
-      <div
+      <WaterWave
         
         css={css`
         width: 100%;
@@ -217,8 +217,12 @@ const Hero = () =>  {
         );
         }
       `}
+      dropRadius={20}
+      perturbance={0.01}
+      interactive={true}
        
       >
+        {methods => (
           <>
             <Content id='hero'>
             <Header />
@@ -336,12 +340,15 @@ const Hero = () =>  {
             </TextoImagen>
             </Content>
           </>
+        )}
         
-        </div>
+        </WaterWave>
       </>
         
     );
   };
+  return <div className="Hero">{renderFirstold()}</div>;
+}
   
  
 export default Hero;
